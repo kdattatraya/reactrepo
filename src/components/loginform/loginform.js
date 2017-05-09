@@ -19,9 +19,9 @@ class LoginForm extends Component {
     let {email,password} =this.state;
     this.props.login(email,password);
 
-    console.log("form submitted");
+    console.log("Form submitted");
     alert("Hi Welcome");
-    // this.props.history.push('/courses');
+    this.props.history.push('/courses');
   }
   
   render() {
